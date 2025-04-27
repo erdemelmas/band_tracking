@@ -6,25 +6,7 @@
 YOLOv8 nesne algılama modeli kullanılarak insan tespiti gerçekleştirilir, ve sonuçlar düzenli olarak JSON formatında kaydedilir.
 
 ---
-'''
-## Proje Klasör Yapısı
-
-band_tracking/
-├── main.py                # Tüm akışı organize eden ana dosya
-├── config.py               # Konfigürasyonları yükler ve CUDA kontrolü yapar
-├── logger.py               # Logger ayarlarını yapar (gürültüleri bastırır)
-├── model_loader.py         # YOLO modelini yükler
-├── display_handler.py      # Görsel işlemler: kutu çizimi, video gösterimi
-├── video_handler.py        # Video işlemleri ve log klasörü yönetimi
-├── processing.py           # Video işleme, insan sayma ve loglama hesaplamaları
-├── utils.py                # Yardımcı fonksiyonlar (zaman işlemleri gibi)
-│
-├── config.json             # Ayarların bulunduğu dosya
-├── requirements.txt        # Gerekli kütüphane listesi
-├── models                  # YOLO modellerinin yüklü olduğu klasör
-├── videos                  # Örnek videoların yüklü olduğu klasör
-└── logs/                   # Çıktı JSON dosyalarının kaydedildiği klasör
-'''
+``` band_tracking/ ├── main.py # Tüm akışı organize eden ana dosya ├── config.py # Konfigürasyonları yükler ve CUDA kontrolü yapar ├── logger.py # Logger ayarlarını yapar (gürültüleri bastırır) ├── model_loader.py # YOLO modelini yükler ├── display_handler.py # Görsel işlemler: kutu çizimi, video gösterimi ├── video_handler.py # Video işlemleri ve log klasörü yönetimi ├── processing.py # Video işleme, insan sayma ve loglama hesaplamaları ├── utils.py # Yardımcı fonksiyonlar (zaman işlemleri gibi) ├── config.json # Ayarların bulunduğu dosya ├── requirements.txt # Gerekli kütüphane listesi ├── models/ # YOLO modellerinin yüklü olduğu klasör ├── videos/ # Örnek videoların yüklü olduğu klasör └── logs/ # Çıktı JSON dosyalarının kaydedildiği klasör ```
 ---
 
 ## Dosya Görevleri

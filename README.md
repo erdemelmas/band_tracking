@@ -10,7 +10,7 @@ YOLOv8 nesne algılama modeli kullanılarak insan tespiti gerçekleştirilir, ve
 ## Proje Klasör Yapısı
 ```
 band_tracking/
-├── main.py                # Tüm akışı organize eden ana dosya
+├── main.py                 # Tüm akışı organize eden ana dosya
 ├── config.py               # Konfigürasyonları yükler ve CUDA kontrolü yapar
 ├── logger.py               # Logger ayarlarını yapar (gürültüleri bastırır)
 ├── model_loader.py         # YOLO modelini yükler
@@ -118,7 +118,7 @@ band_tracking/
 | `person_count` | Belirlenen sürede tespit edilen kişi sayısı |
 | `change_detected` | Eğer 15 saniyelik chunkın sonunda kişi sayısı değiştiyse `true`, aksi takdirde `false` |
 
-'''
+```
 #############################################################################
                                                                             #
 *** Kurulum ve Kullanım ***                                                 #
@@ -140,4 +140,4 @@ pip install -r requirements.txt                                             #
 python main.py                                                              #
                                                                             #
 #############################################################################
-'''
+```

@@ -1,15 +1,15 @@
-## Band Tracking System ##
+## Workzone Tracker ##
 
 ## Proje Açıklaması
 
-**Band Tracking System**, bir video içerisindeki belirli bir **çalışma alanı** içinde bulunan kişilerin anlık ve periyodik sayımını yapar.  
+**Workzone Tracker**, bir video içerisindeki belirli bir **çalışma alanı** içinde bulunan kişilerin anlık ve periyodik sayımını yapar.  
 YOLOv8 nesne algılama modeli kullanılarak insan tespiti gerçekleştirilir, ve sonuçlar düzenli olarak JSON formatında kaydedilir.
 
 ---
 
 ## Proje Klasör Yapısı
 ```
-band_tracking/
+workzone_tracker/
 ├── main.py                 # Tüm akışı organize eden ana dosya
 ├── config.py               # Konfigürasyonları yükler ve CUDA kontrolü yapar
 ├── logger.py               # Logger ayarlarını yapar (gürültüleri bastırır)

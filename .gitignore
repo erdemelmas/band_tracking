@@ -10,3 +10,5 @@ models/
 logs/
 logs
 /logs
+__pycache__/
+*.pyc

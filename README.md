@@ -6,7 +6,7 @@
 YOLOv8 nesne algılama modeli kullanılarak insan tespiti gerçekleştirilir, ve sonuçlar düzenli olarak JSON formatında kaydedilir.
 
 ---
-
+'''
 ## Proje Klasör Yapısı
 
 band_tracking/
@@ -24,7 +24,7 @@ band_tracking/
 ├── models                  # YOLO modellerinin yüklü olduğu klasör
 ├── videos                  # Örnek videoların yüklü olduğu klasör
 └── logs/                   # Çıktı JSON dosyalarının kaydedildiği klasör
-
+'''
 ---
 
 ## Dosya Görevleri
@@ -118,7 +118,7 @@ band_tracking/
 | `person_count` | Belirlenen sürede tespit edilen kişi sayısı |
 | `change_detected` | Eğer 15 saniyelik chunkın sonunda kişi sayısı değiştiyse `true`, aksi takdirde `false` |
 
-
+'''
 #############################################################################
                                                                             #
 *** Kurulum ve Kullanım ***                                                 #
@@ -140,3 +140,4 @@ pip install -r requirements.txt                                             #
 python main.py                                                              #
                                                                             #
 #############################################################################
+'''

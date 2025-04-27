@@ -1,0 +1,7 @@
+{
+    "model_path": "models/yolov8x.pt",
+    "video_path": "videos/demo5.mp4",
+    "conf_threshold": 0.2,
+    "iou_threshold": 0.5,
+    "batch_size": 4
+}

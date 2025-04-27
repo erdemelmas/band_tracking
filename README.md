@@ -75,7 +75,7 @@ workzone_tracker/
   
 ---
 
-### `processing.py` (Hesaplama Merkezi)
+### `processing.py` 
 
 İşlem adımları:
 1. **Frame Okuma**: Videodan her saniye bir frame alınır.
@@ -113,31 +113,27 @@ workzone_tracker/
 ### JSON Alanları:
 
 | Alan | Açıklama |
-|:----|:---------|
+|:-----|:---------|
 | `time_range` | Başlangıç ve bitiş zamanı (örneğin `"09:00:00-09:00:03"`) |
 | `person_count` | Belirlenen sürede tespit edilen kişi sayısı |
 | `change_detected` | Eğer 15 saniyelik chunkın sonunda kişi sayısı değiştiyse `true`, aksi takdirde `false` |
 
-```
-#############################################################################
-                                                                            #
-*** Kurulum ve Kullanım ***                                                 #
-                                                                            #
-**Gerekli Kütüphaneleri Yükle**                                             #
-pip install -r requirements.txt                                             #
-                                                                            #
-**config.json Dosyasını Düzenle**                                           #
-{                                                                           #
-  "model_path": "models/yolov8x.pt",                                        #
-  "video_path": "videos/demo4.mp4",                                         #
-  "conf_threshold": 0.5,                                                    #
-  "iou_threshold": 0.5,                                                     #
-  "batch_size": 1,                                                          #
-  "working_zone": [[700, 50], [1200, 50], [1200, 710], [700, 710]]          #
-}                                                                           #
-                                                                            #
-**Projeyi Çalıştır**                                                        #
-python main.py                                                              #
-                                                                            #
-#############################################################################
+```                                                                       
+*** Kurulum ve Kullanım ***                                                 
+                                                                            
+**Gerekli Kütüphaneleri Yükle**                                             
+pip install -r requirements.txt                                             
+                                                                            
+**config.json Dosyasını Düzenle**                                           
+{                                                                           
+  "model_path": "models/yolov8x.pt",                                        
+  "video_path": "videos/demo4.mp4",                                         
+  "conf_threshold": 0.5,                                                    
+  "iou_threshold": 0.5,                                                     
+  "batch_size": 1,                                                          
+  "working_zone": [[700, 50], [1200, 50], [1200, 710], [700, 710]]          
+}                                                                           
+                                                                            
+**Projeyi Çalıştır**                                                        
+python main.py                                                                                                                                       
 ```

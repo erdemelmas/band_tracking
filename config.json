@@ -3,5 +3,23 @@
     "video_path": "videos/demo5.mp4",
     "conf_threshold": 0.2,
     "iou_threshold": 0.5,
-    "batch_size": 4
+    "batch_size": 4,
+    "working_zone": [
+        [
+            700,
+            50
+        ],
+        [
+            1200,
+            50
+        ],
+        [
+            1200,
+            710
+        ],
+        [
+            700,
+            710
+        ]
+    ]
 }
